@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+header, section, div {
+  box-sizing: border-box;
+}
+
+hr {
+  color: #7d97ad;
+  max-width: 1000px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+
+/**Header**/
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.header__logo {
+  height: 70px;
+  margin-right: 1em;
+  vertical-align: middle;
+  margin-top: 12px;
+}
+
+.header__title {
+  text-align: right;
+  vertical-align: center;
+  color: #2d3c49;
+  float: right;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+/**Main**/
+
+.feature__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.works {
+  text-align: left;
+  vertical-align: middle;
+  margin: 1em 0.5em 0.25em;
+  text-transform: none;
+  padding: auto;
+}
+
+/**Projects**/
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #7d97ad;
+  justify-content: center;
+  position: relative;
+}
+
+.cover {
+  width: 100%;
+  margin: 0.25em 0.25em;
+  max-width: 305px;
+}
+
+.project__list {
+  text-align: center;
+  float:left;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: auto;
+}
+
+/**Responsive**/
+
+@media screen and (max-width: 778px) {
+  .header {
+    display: flex;
+    font-size: 0.75em;
+  }
+  .header__logo {
+    height: 50px;
+  }
+  h2, h3 {
+    font-size: 1.2em;
+  }
+  .cover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: auto;
+
+  }
+
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: 1em;
+  }
+  h2, h3 {
+    font-size: 1.5em;
+  }
+  .cover {
+    padding: auto;
+    width: 100%;
+    max-width: 225px;
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  .content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
